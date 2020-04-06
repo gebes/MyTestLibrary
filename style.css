@@ -1,0 +1,69 @@
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 16px;
+    width: 50%;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    align-content: space-evenly;
+    vertical-align: center;
+    horiz-align: center;
+    background: #ffffff;
+}
+
+.top-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+}
+
+.header {
+    padding: 10px 16px;
+    background: #253044;
+    color: #f1f1f1;
+    text-align: left;
+}
+
+.content {
+    padding: 16px;
+    background: #152034;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.fadeOutInfinitly{
+    text-align: center;
+    vertical-align: bottom;
+    animation: fadeIn 2s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    background: #152034;
+}
+
