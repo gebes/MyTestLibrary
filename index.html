@@ -5,6 +5,8 @@
     <title>Gebes's Playground</title>
     <link rel="stylesheet" href="style.css"/>
     <script type="text/javascript" src="sticky_header.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="top-container">
@@ -17,18 +19,67 @@
 <div class="content">
     <div class="card">
         <h1>About</h1>
-        <p align="center">I haven't touched HTML for years. So After some time I decided to make a small playground, where I can get into it again. So this is basically just a collection of some cool stuff</p>
+        <p align="center">I haven't touched HTML for years. So After some time I decided to make a small playground,
+            where I can get into it again. So this is basically just a collection of some cool stuff</p>
     </div>
+
 
     <div class="card">
 
         <h2>FadeOut Animation</h2>
         Here for example, is a fadeOut Animation, which repeats for some times. Don't try to count how often...
 
-        <div class="card">
-            <p class="fadeOutInfinitly">Tony, I don't feel so good...</p>
+        <div class="innerCard">
+            <p class="fadeInInfinitly">Tony, I don't feel so good...</p>
         </div>
+        <h3>HTML</h3>
+        <pre class="code"><code class="prettyprint lang-html">
+&ltp class="fadeInInfinitly"&gtTony, I don't feel so good...&lt/p&gt
+            </code></pre>
+        <h3>CSS</h3>
+        <pre class="code"><code class="prettyprint lang-css">
+.fadeInInfinitly {
+    text-align: center;
+    vertical-align: bottom;
+    animation: fadeIn 2s ease forwards;
+    animation-iteration-count: infinite;
+}
 
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+</code></pre>
+        <h3>JavaScript</h3>
+        <pre class="code"><code class="prettyprint lang-js">
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+    myFunction()
+};
+
+
+let sticky_header;
+let sticky;
+
+window.onload = function (){
+    // After the document has been loaded, we get the header from the document
+    sticky_header = document.getElementById("homepageHeader");
+    sticky = sticky_header.offsetTop;
+};
+
+// Add the sticky class to the sticky_header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+    if (window.pageYOffset > sticky) {
+        sticky_header.classList.add("sticky");
+    } else {
+        sticky_header.classList.remove("sticky");
+    }
+}
+            </code></pre>
     </div>
 
 

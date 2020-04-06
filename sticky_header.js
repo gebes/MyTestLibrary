@@ -8,7 +8,7 @@ let sticky_header;
 let sticky;
 
 window.onload = function (){
-    // After the document has been loaded, we get the header
+    // After the document has been loaded, we get the header from the document
     sticky_header = document.getElementById("homepageHeader");
     sticky = sticky_header.offsetTop;
 };
