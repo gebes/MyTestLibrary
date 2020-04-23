@@ -1,6 +1,7 @@
 My Test Library
 ===
-I created a place, where I can test lots of different stuf. Playing with HTML like on a Playground makes still lots of fun, and so I decided to share it.
+I created a place, where I can test lots of different stuff. Playing with HTML like on a Playground makes still lots of fun, and so I decided to share it.
+I never really worked with HTML before,
 
 
 ![](https://i.imgur.com/ZKPUjRf.png)
@@ -11,3 +12,6 @@ I created a place, where I can test lots of different stuf. Playing with HTML li
 
 ## License
 Use it for anything you want!
+
+## What did I learn?
+* HTML & CSS is not difficult
